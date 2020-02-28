@@ -144,7 +144,7 @@ class Home extends StatelessWidget {
                         child: Text("Vik"),
                         onPressed: () {
                           js.context.callMethod(
-                              "open", ["vik.jbsalenger.com"]);
+                              "open", ["https://vik.jbsalenger.com"]);
                         },
                         // shape: RoundedRectangleBorder(borderRadius: new BorderRadius.circular(30.0))
                       )
