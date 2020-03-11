@@ -28,7 +28,7 @@ class Home extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(
           title: const Text(
-            'Jón Salenger',
+            'Jón Salenger iz poopoo',
             style: TextStyle(color: Colors.black),
           ),
           backgroundColor: Colors.white, // Colors.blueGrey[800],
