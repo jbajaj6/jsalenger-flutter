@@ -90,6 +90,48 @@ class Home extends StatelessWidget {
                 margin: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
                 shadowColor: Colors.deepOrange,
                 clipBehavior: Clip.antiAlias,
+                elevation: 0,
+                child: Scaffold(
+                  bottomNavigationBar: ButtonBar(
+                    alignment: MainAxisAlignment.spaceBetween,
+                    children: <Widget>[
+                      OutlineButton(
+                        textColor: Colors.red,
+                        highlightedBorderColor: Colors.red,
+                        child: Text("Reddit"),
+                        onPressed: () {
+                          js.context.callMethod(
+                              "open", ["https://www.reddit.com/r/ProgrammerHumor/"]);
+                        },
+                        // shape: RoundedRectangleBorder(borderRadius: new BorderRadius.circular(30.0))
+                      )
+                    ],
+                  ),
+                  body: Padding(
+                    padding: EdgeInsets.fromLTRB(16.0, 12.0, 16.0, 8.0),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[
+                        Text(
+                          'Reddit',
+                          style: TextStyle(fontSize: 26.0),
+                        ),
+                        SizedBox(height: 8.0),
+                        Text(
+                            'Here\'s a link to the best subreddit, r/ProgrammerHumor. You should follow it. It makes funny memes.'),
+                        Text(
+                          'sometimes.',
+                          style: TextStyle(color: Colors.black26),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+              Card(
+                margin: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+                shadowColor: Colors.deepOrange,
+                clipBehavior: Clip.antiAlias,
                 elevation: 8.0,
                 child: Scaffold(
                   bottomNavigationBar: ButtonBar(
