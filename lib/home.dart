@@ -1,6 +1,6 @@
-import 'package:flutter/material.dart';
-import 'package:universal_html/prefer_universal/html.dart' as html;
 import 'dart:js' as js;
+
+import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
 Duration buttonAnim = new Duration(seconds: 5);
@@ -50,7 +50,7 @@ class Home extends StatelessWidget {
                 margin: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
                 shadowColor: Colors.deepOrange,
                 clipBehavior: Clip.antiAlias,
-                elevation: 8.0,
+                elevation: 0,
                 child: Scaffold(
                   bottomNavigationBar: ButtonBar(
                     alignment: MainAxisAlignment.spaceBetween,
@@ -133,7 +133,7 @@ class Home extends StatelessWidget {
                 margin: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
                 shadowColor: Colors.deepOrange,
                 clipBehavior: Clip.antiAlias,
-                elevation: 8.0,
+                elevation: 6.0,
                 child: Scaffold(
                   bottomNavigationBar: ButtonBar(
                     alignment: MainAxisAlignment.spaceBetween,
